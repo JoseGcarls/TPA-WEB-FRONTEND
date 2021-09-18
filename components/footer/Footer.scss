@@ -1,0 +1,27 @@
+@import '../../globalData';
+.footer{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    color: #8e8e8e;
+    background-color: $primary;
+    font-family: 'Poppins', sans-serif;
+    a{
+        margin: 0 5px;
+        text-decoration: none;
+        font-size: 12px;
+        color: #8e8e8e;
+    }
+    .footer-content-1{
+        margin-bottom: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,782 @@
+.footer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(71, 71, 71, 0.71);
+  background-color: rgba(231, 229, 229, 0.269);
+}
+.footer a {
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(71, 71, 71, 0.71);
+}
+.footer .footer-content-1 {
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+.navbar {
+  display: flex;
+  height: 55px;
+  align-items: center;
+  border-bottom: 0.2px solid rgba(0, 0, 0, 0.172);
+  padding: 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar .title {
+  font-weight: 900;
+  font-size: 28px;
+  font-family: "Style Script", cursive;
+}
+.navbar #search {
+  width: 300px;
+  height: 25px;
+  background-color: rgba(231, 229, 229, 0.269);
+  border-radius: 5px;
+  border: 0.2px solid rgba(0, 0, 0, 0.172);
+}
+.navbar ::-webkit-input-placeholder {
+  text-align: center;
+}
+.navbar .sub-icon {
+  height: 20px;
+  margin: 0 7px;
+}
+.navbar .btn {
+  margin: 0 5px;
+}
+.navbar .btn button {
+  height: 25px;
+  width: 70px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.navbar .login {
+  background-color: #0073ff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+.navbar .signin {
+  background-color: white;
+  border: none;
+  color: #0073ff;
+}
+
+@media only screen and (max-width: 769px) {
+  .navbar #search {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 541px) {
+  .navbar #search {
+    display: none;
+  }
+  .navbar .navicon {
+    display: none;
+  }
+  .navbar .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+@import url(https://fonts.googleapis.com/css2?family=Style+Script&display=swap);
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - (55px + 80px));
+  gap: 20px;
+  background-color: rgba(231, 229, 229, 0.269);
+}
+.login-page .login-content-1 {
+  background-image: url(https://www.instagram.com/static/images/homepage/home-phones@2x.png/9364675fb26a.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 550px;
+  position: relative;
+}
+.login-page .login-content-1 img {
+  position: absolute;
+  height: 387px;
+  left: 130px;
+  top: 84px;
+}
+.login-page .login-content-2 {
+  width: 350px;
+  height: 550px;
+}
+.login-page .login-content-2 .login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 300px;
+  background-color: white;
+  box-shadow: -1px 0px 0px 0px rgba(163, 159, 159, 0.75);
+}
+.login-page .login-content-2 .login-form .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Style Script", cursive;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.login-page .login-content-2 .login-form input {
+  height: 20px;
+  margin: 10px 0;
+  border-radius: 3px;
+  border: 0.7px solid rgba(0, 0, 0, 0.172);
+  background-color: rgba(231, 229, 229, 0.269);
+  padding: 10px;
+}
+.login-page .login-content-2 .login-form button {
+  background-color: #0073ff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.login-page .login-content-2 .login-form .fgpass {
+  text-decoration: none;
+  color: #093872;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.login-page .login-content-2 .register-button {
+  box-shadow: -1px 0px 0px 0px rgba(163, 159, 159, 0.75);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 60px;
+}
+.login-page .login-content-2 .register-button a {
+  text-decoration: none;
+  margin-left: 3px;
+  color: #0073ff;
+  font-weight: 500;
+}
+.login-page .login-content-2 .title-content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  height: 30px;
+}
+.login-page .login-content-2 .install-button {
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.login-page .login-content-2 .install-button .install-image-1 {
+  background-image: url(https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 85px;
+  width: 160px;
+}
+.login-page .login-content-2 .install-button .install-image-2 {
+  background-image: url(https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 85px;
+  width: 160px;
+}
+
+@media only screen and (max-width: 769px) {
+  .login-page {
+    width: 100%;
+  }
+  .login-page .login-content-1 {
+    background-image: none;
+    position: absolute;
+    display: none;
+  }
+  .login-page .install-button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 415px) {
+  .login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    width: 100vw;
+    height: max-content;
+  }
+  .login-page .login-content-2 {
+    width: 100%;
+  }
+  .login-page .login-content-2 .login-form {
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60%;
+  }
+  .login-page .login-content-2 .register-button {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    box-shadow: none;
+  }
+  .login-page .login-content-2 .register-button a {
+    text-decoration: none;
+    margin-left: 3px;
+    color: #0073ff;
+    font-weight: 500;
+  }
+  .login-page .login-content-2 .install-button {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-page .login-content-2 .install-button .install-image-1 {
+    height: 60px;
+    width: 130px;
+  }
+  .login-page .login-content-2 .install-button .install-image-2 {
+    height: 60px;
+    width: 130px;
+  }
+}
+@import url(https://fonts.googleapis.com/css2?family=Style+Script&display=swap);
+.register-page {
+  min-height: 100vh;
+  background-color: rgba(231, 229, 229, 0.269);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-page .register-content {
+  width: 350px;
+  height: 720px;
+}
+.register-page .register-content .register-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 470px;
+  background-color: white;
+  box-shadow: -1px 0px 0px 0px rgba(163, 159, 159, 0.75);
+}
+.register-page .register-content .register-form .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Style Script", cursive;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.register-page .register-content .register-form .sub-title {
+  font-weight: 700;
+  opacity: 0.7;
+  text-align: center;
+  width: 200px;
+  left: 50px;
+  top: -10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.register-page .register-content .register-form input {
+  height: 20px;
+  margin: 10px 0;
+  border-radius: 3px;
+  border: 0.7px solid rgba(0, 0, 0, 0.172);
+  background-color: rgba(231, 229, 229, 0.269);
+  padding: 10px;
+}
+.register-page .register-content .register-form button {
+  background-color: #0073ff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.register-page .register-content .register-form .terms {
+  margin-top: 10px;
+  text-align: center;
+  opacity: 0.7;
+}
+.register-page .register-content .register-button {
+  box-shadow: -1px 0px 0px 0px rgba(163, 159, 159, 0.75);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 60px;
+}
+.register-page .register-content .register-button a {
+  text-decoration: none;
+  margin-left: 3px;
+  color: #0073ff;
+  font-weight: 500;
+}
+.register-page .register-content .title-content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  height: 30px;
+}
+.register-page .register-content .install-button {
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.register-page .register-content .install-button .install-image-1 {
+  background-image: url(https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 85px;
+  width: 160px;
+}
+.register-page .register-content .install-button .install-image-2 {
+  background-image: url(https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 85px;
+  width: 160px;
+}
+
+@media only screen and (max-width: 415px) {
+  .register-page {
+    background-color: white;
+    width: 100%;
+  }
+  .register-page .register-content {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .register-page .register-content .register-form {
+    height: 470px;
+  }
+  .register-page .register-content .register-form .sub-title {
+    left: 0px;
+    width: 100%;
+  }
+  .register-page .register-content .register-button {
+    box-shadow: -1px 0px 0px 0px rgba(163, 159, 159, 0.75);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    height: 20px;
+  }
+  .register-page .register-content .install-button {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .register-page .register-content .install-button .install-image-1 {
+    height: 60px;
+    width: 130px;
+  }
+  .register-page .register-content .install-button .install-image-2 {
+    height: 60px;
+    width: 130px;
+  }
+}
+.fgpass-page {
+  min-height: 100vh;
+  background-color: rgba(231, 229, 229, 0.269);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fgpass-page .fgpass-content {
+  width: 400px;
+  height: 600px;
+}
+.fgpass-page .fgpass-content .fgpass-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 450px;
+  background-color: white;
+  box-shadow: -1px 0px 0px 0px rgba(163, 159, 159, 0.75);
+}
+.fgpass-page .fgpass-content .fgpass-form .logo {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fgpass-page .fgpass-content .fgpass-form .logo .lock {
+  height: 100px;
+}
+.fgpass-page .fgpass-content .fgpass-form .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.fgpass-page .fgpass-content .fgpass-form .sub-title {
+  font-weight: 700;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 5px;
+  position: relative;
+}
+.fgpass-page .fgpass-content .fgpass-form input {
+  height: 20px;
+  margin: 10px 0;
+  border-radius: 3px;
+  border: 0.7px solid rgba(0, 0, 0, 0.172);
+  background-color: rgba(231, 229, 229, 0.269);
+  padding: 10px;
+}
+.fgpass-page .fgpass-content .fgpass-form button {
+  background-color: #0073ff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 10px;
+  height: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.fgpass-page .fgpass-content .fgpass-form .or {
+  position: relative;
+  margin: 10px 0;
+  text-align: center;
+}
+.fgpass-page .fgpass-content .fgpass-form .or:before {
+  content: "";
+  width: 43%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.296);
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.fgpass-page .fgpass-content .fgpass-form .or:after {
+  content: "";
+  width: 43%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.296);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.fgpass-page .fgpass-content .fgpass-form .register-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fgpass-page .fgpass-content .fgpass-form .register-button a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+.fgpass-page .fgpass-content .login-button {
+  box-shadow: -1px 0px 0px 0px rgba(163, 159, 159, 0.75);
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+.fgpass-page .fgpass-content .login-button a button {
+  font-weight: 600;
+  height: 60px;
+  width: 400px;
+  cursor: pointer;
+}
+.fgpass-page .fgpass-content .title-content-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  height: 30px;
+}
+
+@media only screen and (max-width: 415px) {
+  .fgpass-page {
+    background-color: white;
+    width: 100%;
+  }
+  .fgpass-page .fgpass-content {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .fgpass-page .fgpass-content .fgpass-form {
+    height: 95%;
+    box-sizing: border-box;
+  }
+  .fgpass-page .fgpass-content .fgpass-form .sub-title {
+    left: 0px;
+    width: 100%;
+  }
+  .fgpass-page .fgpass-content .login-button {
+    box-shadow: -1px 0px 0px 0px rgba(163, 159, 159, 0.75);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    height: 20px;
+  }
+  .fgpass-page .fgpass-content .login-button a button {
+    width: 100vw;
+  }
+}
+.profile-page {
+  background-color: rgba(231, 229, 229, 0.269);
+  min-height: calc(100vh - 55px - 80px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 30px;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+}
+.profile-page .profile-content-1 {
+  display: flex;
+  width: 700px;
+}
+.profile-page .profile-content-1 .profile-picture {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-page .profile-content-1 .profile-picture img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.profile-page .profile-content-1 .profile-detail {
+  box-sizing: border-box;
+  padding: 10px;
+  width: calc(100% - 200px);
+}
+.profile-page .profile-content-1 .profile-detail .detail-container-1 {
+  display: flex;
+}
+.profile-page .profile-content-1 .profile-detail .detail-container-1 .detail-name {
+  font-size: 25px;
+}
+.profile-page .profile-content-1 .profile-detail .detail-container-1 .detail-button button {
+  margin: 5px 10px;
+  width: 90px;
+  height: 25px;
+  background-color: #0073ff;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.profile-page .profile-content-1 .detail-fp {
+  display: flex;
+  gap: 30px;
+  margin: 10px 0;
+}
+.profile-page .profile-content-1 .detail-fp b {
+  margin-right: 5px;
+}
+.profile-page .profile-content-1 .description {
+  margin-top: 10px;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+.profile-page .profile-content-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 700px;
+  align-items: center;
+}
+.profile-page .profile-content-2 .description-2 {
+  display: none;
+}
+.profile-page .profile-content-2 .detail-fp-2 {
+  display: none;
+}
+.profile-page .profile-content-2 .button-content-2 {
+  border-top: 1px solid rgba(0, 0, 0, 0.11);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+.profile-page .profile-content-2 .button-content-2 button {
+  width: 100px;
+  border: none;
+  border-top: 0.1px solid rgba(0, 0, 0, 0.11);
+  height: 30px;
+  background-color: #f9f8f8;
+  cursor: pointer;
+}
+.profile-page .profile-content-2 .button-content-2 button.current {
+  font-weight: 700;
+  border-top: 2px solid black;
+}
+.profile-page .profile-content-2 .image-content-2 {
+  display: grid;
+  grid-template-columns: 250px 200px 250px;
+  grid-auto-rows: 220px;
+  justify-items: center;
+}
+.profile-page .profile-content-2 .image-content-2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+.profile-page .profile-content-2 .image-content-2 a img {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 720px) {
+  .profile-page {
+    height: 100%;
+    padding: 20px 0 0 0;
+  }
+  .profile-page .profile-content-1 {
+    width: 100%;
+    display: flex;
+    padding: 0 0 20px 20px;
+    box-sizing: border-box;
+  }
+  .profile-page .profile-content-1 .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+  .profile-page .profile-content-1 .profile-picture img {
+    width: 100px;
+    height: 100px;
+  }
+  .profile-page .profile-content-1 .profile-detail {
+    width: 60%;
+  }
+  .profile-page .profile-content-1 .profile-detail .detail-container-1 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .profile-page .profile-content-1 .profile-detail .detail-container-1 .detail-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+  }
+  .profile-page .profile-content-1 .profile-detail .detail-container-1 .detail-button button {
+    margin: 0 0;
+    width: 100%;
+  }
+  .profile-page .profile-content-1 .profile-detail .detail-fp {
+    display: none;
+  }
+  .profile-page .profile-content-1 .profile-detail .description {
+    display: none;
+  }
+  .profile-page .profile-content-2 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .profile-page .profile-content-2 .description-2 {
+    width: 100%;
+    word-wrap: break-word;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 20px 20px 20px;
+  }
+  .profile-page .profile-content-2 .detail-fp-2 {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 10px;
+  }
+  .profile-page .profile-content-2 .detail-fp-2 .posts {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-page .profile-content-2 .detail-fp-2 .followers {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-page .profile-content-2 .detail-fp-2 .following {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-page .profile-content-2 .button-content-2 {
+    width: 100%;
+  }
+  .profile-page .profile-content-2 .image-content-2 {
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: repeat(3, calc(100vw / 3));
+    grid-auto-rows: calc(100vw / 3);
+    grid-gap: 3px;
+  }
+  .profile-page .profile-content-2 .image-content-2 a {
+    width: 100%;
+    height: 100%;
+  }
+  .profile-page .profile-content-2 .image-content-2 a img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=/newTPA.f69400ca.css.map */

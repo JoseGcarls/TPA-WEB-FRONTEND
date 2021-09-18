@@ -1,0 +1,36 @@
+$navbar : 55px;
+$footer : 80px;
+
+$primary : var(--primary);
+$secondary : var(--secondary);
+$text : var(--text);
+$pnbtn : var(--profile-nav-button);
+$profileIcon : var(--profile-icon);
+$naviColor : var(--nav-icon-color);
+$navicon : var(--nav-icon);
+$button: #0073ff;
+$line : rgba(163, 159, 159, 0.75);
+
+body{
+    --primary : rgba(231, 229, 229, 0.269);
+    --secondary: white;
+    --text : black;
+    --profile-nav-button : rgb(249,248,248);
+    --profile-icon : black;
+    --nav-icon-color : none;
+    --nav-icon: path('M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z');
+    font-family: 'Poppins', sans-serif;
+    color: $text;
+}
+body.dark{
+    --primary : rgb(44, 46, 49);
+    --secondary : rgb(24, 22, 26);
+    --text : rgb(228, 226, 226);
+    --profile-nav-button : rgb(44, 46, 49);
+    --profile-icon : white;
+    --nav-icon-color : invert(100%);
+    --nav-icon: path('M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z');
+}
+
+
+

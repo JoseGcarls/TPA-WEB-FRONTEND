@@ -1,0 +1,89 @@
+@import '../../globalData';
+
+.activity-page{
+    background-color: $primary;
+    height: calc(100vh - #{$navbar});
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    box-sizing: border-box;
+
+    .activity-main{
+        height: 100%;
+        width: 1200px;
+        background-color: $secondary;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        box-sizing: border-box;
+        .activity-container{
+            display: flex;
+            align-items: center;
+            
+            .activity-image{
+                img{
+                    height: 100px;
+                    border-radius: 50%;
+                }
+            }
+            .activity-content-container{
+                width: 100%;
+                display: flex;
+                .container-content{
+                    gap: 10px;
+                    margin-left: 20px;
+                    .container-username{
+                        font-weight: 700;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .activity-button{
+                button{
+                    background-color: rgba($color: #0073ff, $alpha: 1.0);
+                    color: white;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    width: 100px;
+                    height: 30px;
+                    font-weight: 700;
+                }
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width : 1025px) {
+    .activity-page{
+        .activity-main{
+            width: 700px;
+        }
+    }
+}
+
+@media screen and (max-width : 540px){
+    .activity-page{
+        padding: 0px;
+        .activity-main{
+            width: 100%;
+            height: 100%;
+            .activity-container{
+                .activity-image{
+                    img{
+                        height: 50px;
+                    }
+                }
+                .activity-button{
+                    button{
+
+                        width: 70px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

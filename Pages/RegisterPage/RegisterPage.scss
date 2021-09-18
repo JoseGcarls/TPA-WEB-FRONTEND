@@ -1,0 +1,267 @@
+@import '../../globalData';
+@import url(https://fonts.googleapis.com/css2?family=Style+Script&display=swap);
+
+.register-page{
+    min-height: calc(100vh - (#{$footer + $navbar}));
+    background-color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    .register-content{
+        width: 350px;
+        height: 800px;
+        .register-form{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            height: 550px;
+            background-color: $secondary;
+            // box-shadow: -1px 0px 0px 0px rgba(163,159,159,0.75);
+            border: 1px solid rgba(163,159,159,0.75);
+            border-radius: 3px;
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 40px;
+                font-family: 'Style Script', cursive;
+                font-weight: bolder;
+                margin-bottom: 10px;
+                color: $text;
+            }
+            .sub-title{
+                font-weight: 700;
+                opacity: 0.7;
+                text-align: center;
+                width: 200px;
+                left: 50px;
+                top: -10px;
+                margin-bottom: 5px;
+                position: relative;
+                color: $text;
+            }
+            input{
+                height: 20px;
+                margin: 10px 0;
+                border-radius: 3px;
+                border: 0.7px solid rgba(0, 0, 0, 0.172);
+                background-color: rgba(231, 229, 229, 0.269);
+                padding: 10px;
+                color: $text;
+            }
+            .error-message{
+                color: rgb(243, 92, 92);
+                display: flex;
+                justify-content: center;
+                margin: -8px 0;
+                font-weight: 600;
+            }
+            button{
+                background-color: rgba($color: #0073ff, $alpha: 1.0);
+                color: white;
+                border: none;
+                border-radius: 3px;
+                margin-top: 10px;
+                min-height: 30px;
+                height: auto;
+                font-weight: 700;
+                cursor: pointer;
+                .loading-moment{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 5px 0;
+                    margin-bottom: 5px;
+                    .loading{
+                        border: 5px solid rgb(131, 131, 131);
+                        border-radius: 50%;
+                        border-top: 5px solid white;
+                        width: 10px;
+                        height: 10px;
+                        animation: spin 800ms linear infinite;
+                        position: relative;
+                    }
+                }
+            }
+            .terms{
+                margin-top: 10px;
+                text-align: center;
+                opacity: 0.7;
+                color: $text;
+            }
+            .or{
+                &:before{
+                    content: '';
+                    width: 43%;
+                    border-bottom: 1px solid $text;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    opacity: 0.7;
+                }
+                position: relative;
+                margin: 10px 0;
+                text-align: center;
+                color: $text;
+                font-weight: 800;
+                font-size: small;
+                opacity: 0.7;
+                &:after{
+                    opacity: 0.7;
+                    content: '';
+                    width: 43%;
+                    border-bottom: 1px solid $text;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                }
+            }
+            .google-btn{
+                color: white;
+                display: flex;
+                position: relative;
+                .google-img{
+                    background-position: center;
+                    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg");
+                    background-color: white;
+                    background-repeat: no-repeat;
+                    border: 1px solid #0073ff;
+                    width: 50px;
+                    height: 100%;
+                    position: relative;
+                    box-sizing: border-box;
+                    border-top-left-radius: 2px;
+                    border-bottom-left-radius: 2px;
+                }
+                .google-text{
+                    color: white;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 10px;
+                }
+            }
+           
+        }
+        .register-button{
+            // box-shadow: -1px 0px 0px 0px rgba(163,159,159,0.75);
+            border: 1px solid rgba(163,159,159,0.75);
+            border-radius: 3px;
+            background-color: $secondary;
+            display: flex;
+            color: $text;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            height: 60px;
+            a{
+                text-decoration: none;
+                margin-left: 3px;
+                color: #0073ff;
+                font-weight: 500;
+            }
+        }
+        .title-content-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0;
+            height: 30px;
+            color: $text;
+        }
+        .install-button{
+            height: 85px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            .install-image-1{
+                background-image: url(https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                height: 85px;
+                width: 160px;
+            }
+            .install-image-2{
+                background-image: url(https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png);
+                background-size: 100%;
+                background-repeat: no-repeat;
+                height: 85px;
+                width: 160px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 415px){
+    .register-page{
+        background-color: $secondary;
+        width: 100%;
+        padding: 0px;
+        // height: calc(100vh - (#{$footer + $navbar}));
+        position: relative;
+        .register-content{
+            width: 100%;
+            box-sizing: border-box;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .register-form{
+                height: auto;
+                border: none;
+                box-shadow: none;
+                width: 75%;
+                .sub-title{
+                    left: 0px;
+                    width: 100%;
+                }
+                .google-btn{
+                    .google-img{
+                        height: 30px;
+                    }
+                }
+            }
+            .register-button{
+                box-shadow: none;
+                background-color: $secondary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 0px;
+                height: 20px;
+                border: none;
+            }
+            .install-button{
+                height: 60px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .install-image-1{
+                    height: 60px;
+                    width: 130px;
+                }
+                .install-image-2{
+                    height: 60px;
+                    width: 130px;
+                }
+            } 
+        }
+    }
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

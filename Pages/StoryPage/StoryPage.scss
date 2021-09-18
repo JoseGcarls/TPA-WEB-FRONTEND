@@ -1,0 +1,337 @@
+@import '../../globalData';
+.story-page{
+    background-color: $primary;
+    min-height: calc(100vh - #{$navbar});
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container{
+        background-color: $secondary;
+        height: 1000px;
+        width: 700px;
+        position: relative;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        .left-btn{
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            top: 50%;
+            left: -70px;
+            .slider-icon{
+                height: 80px;
+                color: $text;
+            }
+        }
+        .right-btn{
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            top: 50%;
+            right: -70px;
+            .slider-icon{
+                height: 80px;
+                color: $text;
+            }
+        }
+        .story-content{
+            display: flex;
+            flex-direction: column;
+            width: 700px;
+            height: 900px;
+            justify-content: center;
+            
+            position: relative;
+            video{
+                object-fit: contain;
+                height: 900px;
+                width: 700px;
+            }
+            .detail-content-story{
+                .header-story{
+                    
+                    img{
+                        height: 70px;
+                        width: 70px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 20px;
+                        left: 10px;
+                    }
+                    .name{
+                        position: absolute;
+                        top: 40px;
+                        left: 90px;
+                        font-size: 20px;
+                    }
+                }
+                .story-button{
+                    position: absolute;
+                    right: 10px;
+                    top: 30px;
+                    .play{
+                        background-color: transparent;
+                        border: none;
+                        position: relative;
+                        opacity: 0.3;
+                        cursor: pointer;
+                        z-index: 5;
+                        .play-button{
+                            
+                            height: 50px;
+                            color: white;
+                            position: relative;
+                        }
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                    .sound{
+                        background-color: transparent;
+                        border: none;
+                        position: relative;
+                        opacity: 0.3;
+                        cursor: pointer;
+                        z-index: 5;
+                        .sound-button{
+                            
+                            height: 50px;
+                            color: white;
+                            position: relative;
+                        }
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                    .share{
+                        background-color: transparent;
+                        border: none;
+                        position: relative;
+                        opacity: 0.3;
+                        cursor: pointer;
+                        z-index: 5;
+                        .share-button{
+                            
+                            height: 50px;
+                            color: white;
+                            position: relative;
+                        }
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                    .exit{
+                        background-color: transparent;
+                        border: none;
+                        position: relative;
+                        opacity: 0.3;
+                        cursor: pointer;
+                        z-index: 5;
+                        .exit-button{
+                            
+                            height: 50px;
+                            color: white;
+                            position: relative;
+                        }
+                        &:hover{
+                            opacity: 0.7;
+                        }
+                    }
+                }
+                .loading-container{
+                    width: 100%;
+                    height: 10px;
+                    background-color: rgb(49, 49, 49);
+                    .loading-bar{
+                        width: 0;
+                        background-color: white;
+                        height: 10px;
+                        transition: 1000ms ease-in-out;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .story-page{
+        .container{
+            height: 800px;
+            width: 500px;
+            .left-btn{
+                top: 50%;
+                left: -70px;
+                .slider-icon{
+                    height: 80px;
+                    color: $text;
+                }
+            }
+            .right-btn{
+                top: 50%;
+                right: -70px;
+                .slider-icon{
+                    height: 80px;
+                    color: $text;
+                }
+            }
+            .story-content{
+                width: 500px;
+                height: 800px;
+                video{
+                    height: 700px;
+                    width: 500px;
+                }
+                .detail-content-story{
+                    .header-story{
+                        
+                        img{
+                            height: 50px;
+                            width: 50px;
+                            top: 70px;
+                            left: 10px;
+                        }
+                        .name{
+                            top: 80px;
+                            left: 70px;
+                            font-size: 20px;
+                        }
+                    }
+                    .story-button{
+                        position: absolute;
+                        right: 10px;
+                        top: 80px;
+                        .play{
+                            .play-button{
+                                
+                                height: 40px;
+                            }
+                        }
+                        .sound{
+                            .sound-button{
+                                height: 40px;
+                            }
+                        }
+                        .share{
+                            .share-button{
+                                height: 40px;
+                            }
+                            
+                        }
+                        .exit{
+                            .exit-button{
+                                height: 40px;
+                            }
+                        }
+                    }
+                    .loading-container{
+                        height: 5px;
+                        .loading-bar{
+                            height: 5px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px){
+    .story-page{
+        width: 100%;
+        .container{
+            height: 100%;
+            width: 100%;
+            border-radius: 0px;
+            .left-btn{
+                top: 50%;
+                left: 0px;
+                background-color: rgb(59, 59, 59);
+                opacity: 0.3;
+                z-index: 7;
+                .slider-icon{
+                    height: 40px;
+                    color: $text;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .right-btn{
+                top: 50%;
+                right: 0px;
+                background-color: rgb(59, 59, 59);
+                opacity: 0.3;
+                z-index: 7;
+                .slider-icon{
+                    height: 40px;
+                    color: $text;
+                }
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            .story-content{
+                width: 100%;
+                height: calc(100vh - #{$navbar});
+                video{
+                    height: 100%;
+                    width: 100%;
+                }
+                .detail-content-story{
+                    .header-story{
+                        
+                        img{
+                            height: 50px;
+                            width: 50px;
+                            top: 20px;
+                            left: 10px;
+                        }
+                        .name{
+                            top: 30px;
+                            left: 70px;
+                            font-size: 18px;
+                        }
+                    }
+                    .story-button{
+                        position: absolute;
+                        right: 10px;
+                        top: 30px;
+                        .play{
+                            .play-button{
+                                
+                                height: 30px;
+                            }
+                        }
+                        .sound{
+                            .sound-button{
+                                height: 30px;
+                            }
+                        }
+                        .share{
+                            .share-button{
+                                height: 30px;
+                            }
+                            
+                        }
+                        .exit{
+                            .exit-button{
+                                height: 30px;
+                            }
+                        }
+                    }
+                    .loading-container{
+                        height: 5px;
+                        .loading-bar{
+                            height: 5px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
